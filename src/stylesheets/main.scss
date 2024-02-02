@@ -105,6 +105,16 @@ div {
     }
 }
 
+@media (min-width: 501px) and (max-width: 800px) {
+    /* Custom CSS rules for screens between 501px and 800px (tablets) */
+    .top .site-top {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+    }
+}
+
+
 /* Stack items on smartphones (<= 500px) */
 @media (max-width: 500px) {
     .top .site-top {
