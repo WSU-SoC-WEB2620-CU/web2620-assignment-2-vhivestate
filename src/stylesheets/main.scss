@@ -8,6 +8,11 @@
     box-sizing: inherit;                              
 }
 
+
+*{
+    box-sizing: inherit;
+}
+
 body {
     width: 80%;
     margin: 0 auto 1rem;
@@ -17,6 +22,14 @@ body {
     text-transform: uppercase;                                 
 }
 
+header {
+    line-height: 100px;
+}
+
+footer {
+    line-height: 100px;
+}
+
 .container {
     display: flex;
     padding: .5rem;
@@ -24,7 +37,6 @@ body {
     border: 2px solid black;
     flex-flow: column nowrap;
     background-color: rgba(255, 255, 255, 0.8);
-
 }
 
 div {
@@ -67,8 +79,9 @@ div {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: stretch; 
+    align-items: stretch;
 }
+
 .bottom > .left > .item-left {
     border: 2px solid rgb(0, 0, 0);
     margin: 5px;
@@ -82,4 +95,20 @@ div {
     padding: 1rem;
 }
 
+
+/* for screens wider than 800px */
+@media (min-width: 801px) {
+    .top .site-top {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+    }
+}
+
+/* Stack items on smartphones (<= 500px) */
+@media (max-width: 500px) {
+    .top .site-top {
+        flex-wrap: wrap; /* multiple lines on smartphones */
+    }
+}
 
