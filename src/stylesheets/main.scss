@@ -1,1 +1,64 @@
 // Your styles go here
+:root {                                             
+    box-sizing: border-box;                           
+}
+*,                                                  
+::before,                                           
+::after {                                           
+    box-sizing: inherit;                              
+}
+
+body {
+    width: 80%;
+    margin: 0 auto 1rem;
+    text-align: center;
+    background-color: rgb(215, 249, 22);
+    font-family: Helvetica, Arial, sans-serif; 
+}
+
+.container {
+    display: flex;
+    margin-top: 2rem;
+    border: 2px solid black;
+    flex-flow: column nowrap;
+
+}
+
+div {
+    flex: 1;
+}
+
+.flex {
+    display: flex;
+}
+
+.top {
+    display: flex;
+}
+
+.top > .site-top > .item-top {
+    border: 2px solid rgb(62, 237, 220);
+    padding: 1rem;
+}
+
+.middle > .site-middle > .item-middle {
+    border: 2px solid rgb(251, 42, 255);
+
+}
+
+
+
+.bottom {
+    display: flex;
+    border: 2px solid rgb(255, 4, 4);
+    align-content: space-around;
+}
+.bottom > .left > .item-left {
+    border: 2px solid black;
+}
+
+.bottom > .right > .item-right {
+    border: 2px solid rgb(255, 255, 255);                 
+}
+
+
