@@ -18,6 +18,7 @@ body {
 
 .container {
     display: flex;
+    padding: .5rem;
     margin-top: 2rem;
     border: 2px solid black;
     flex-flow: column nowrap;
@@ -32,33 +33,52 @@ div {
     display: flex;
 }
 
-.top {
+.container > .top {
     display: flex;
+    flex-flow: column nowrap;
 }
 
 .top > .site-top > .item-top {
     border: 2px solid rgb(62, 237, 220);
     padding: 1rem;
+    margin: 5px;
 }
 
 .middle > .site-middle > .item-middle {
     border: 2px solid rgb(251, 42, 255);
-
+    padding: 1rem;
+    margin: 5px;
 }
 
+.content {
+    border: 2px solid rgb(180, 107, 236);
+    align-content: space-around;
+    padding: 1rem;
+}
 
+.mid-bot {
+    border: 2px solid rgb(106, 65, 34);
+    padding: 1rem;
+    align-content: space-around;
+}
 
 .bottom {
     display: flex;
     border: 2px solid rgb(255, 4, 4);
     align-content: space-around;
+    flex-wrap: wrap;
 }
 .bottom > .left > .item-left {
     border: 2px solid black;
+    padding: 1rem;
+    margin: 5px;
+    flex-direction: column;         
 }
 
 .bottom > .right > .item-right {
-    border: 2px solid rgb(255, 255, 255);                 
+    border: 2px solid rgb(255, 255, 255);       
+    padding: 1rem;
+    margin: 5px;  
 }
 
 
