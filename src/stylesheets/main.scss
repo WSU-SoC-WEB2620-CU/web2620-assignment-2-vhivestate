@@ -12,8 +12,9 @@ body {
     width: 80%;
     margin: 0 auto 1rem;
     text-align: center;
-    background-color: rgb(215, 249, 22);
+    background-color: yellow;
     font-family: Helvetica, Arial, sans-serif; 
+    text-transform: uppercase;                                 
 }
 
 .container {
@@ -22,6 +23,7 @@ body {
     margin-top: 2rem;
     border: 2px solid black;
     flex-flow: column nowrap;
+    background-color: rgba(255, 255, 255, 0.8);
 
 }
 
@@ -33,52 +35,51 @@ div {
     display: flex;
 }
 
+// not conviced this does anything
 .container > .top {
     display: flex;
     flex-flow: column nowrap;
 }
 
 .top > .site-top > .item-top {
-    border: 2px solid rgb(62, 237, 220);
+    border: 2px solid rgb(0, 0, 0);
     padding: 1rem;
     margin: 5px;
+    background-color: rgb(255, 10, 226);
 }
 
 .middle > .site-middle > .item-middle {
-    border: 2px solid rgb(251, 42, 255);
+    border: 2px solid rgb(0, 0, 0);
     padding: 1rem;
     margin: 5px;
+    background-color: rgb(255, 10, 226);
 }
 
-.content {
-    border: 2px solid rgb(180, 107, 236);
-    align-content: space-around;
-    padding: 1rem;
-}
-
+// flex puts items side by side
 .mid-bot {
-    border: 2px solid rgb(106, 65, 34);
-    padding: 1rem;
-    align-content: space-around;
+    // border: 2px solid rgb(241, 0, 0);
+    display: flex;  
 }
 
+//column stacks the items on the left top of each other
 .bottom {
     display: flex;
-    border: 2px solid rgb(255, 4, 4);
-    align-content: space-around;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch; 
 }
 .bottom > .left > .item-left {
-    border: 2px solid black;
-    padding: 1rem;
+    border: 2px solid rgb(0, 0, 0);
     margin: 5px;
-    flex-direction: column;         
+    background-color: rgb(255, 10, 226); 
 }
 
 .bottom > .right > .item-right {
-    border: 2px solid rgb(255, 255, 255);       
-    padding: 1rem;
+    border: 2px solid rgb(0, 0, 0);       
     margin: 5px;  
+    background-color: rgb(255, 10, 226);
+    padding: 1rem;
 }
 
 
